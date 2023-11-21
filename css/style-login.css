@@ -1,0 +1,74 @@
+
+.menu_cor{
+    background-color: #CA1C2A
+}
+
+.fundo_menu a:hover{
+    background-color: #55070e;
+    border-radius: 3px;
+}
+
+.fundo_submenu a:hover{
+    background-color: #cac9c9;
+    border-radius: 3px;
+}
+
+.retira_link{
+    text-decoration: none; /* Retira a linha do link*/
+
+}
+
+.espaco{
+    padding-right:  30px;
+}
+
+.alogin a:hover{
+    background-color: #55070e;
+    border-radius: 3px;   
+}
+
+.letramaior{
+    color: #003B71;
+    font-weight: bold;
+}
+
+.img-text-mapa {
+    position: relative;
+    top: 50px;
+    left: 0px;
+  }
+
+  .letra-cor{
+    color: #003B71;
+    font-weight: bold;
+
+  }
+
+  
+       /* Adicione estilos personalizados aqui, se necessÃĄrio */
+       body {
+        transition: background-color 0.5s, color 0.5s;
+    }
+  
+    body.dark-mode {
+        background-color: #333;
+        color: #fff;
+    }
+  
+    /* Estilo do botÃĢo de alternÃĒncia */
+    #darkModeToggleBtn {
+        transition: transform 0.3s ease-in-out;
+    }
+  
+    #darkModeToggleBtn.dark-mode-on {
+        transform: rotate(180deg);
+    }
+
+    body.dark-mode .div4 .div3 .div2 .div1 section form-check{
+        background-color: #333;
+        color: #fff;
+    }
+
+    h5{
+        text-size-adjust: larger;
+    }
