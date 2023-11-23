@@ -7,11 +7,14 @@
   <link rel="icon" href="img/icon_telecall.jpg" type="image/x-icon">
   <title>Site Oficial - Telecall | Internet, Telefonia, Celular e mais</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/style-cpaas.css">
+  <link rel="stylesheet" type="text/css" href="css/style-2fa.css">
 
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
@@ -85,78 +88,62 @@
 
         <!-- Box 1 -->
         <div class="col-md-4 p-4">
-          <img src="img/logo-modavo-red.svg" alt="Imagem 1" width="355" class="img-fluid imagem">          
-          <h3 class="letramaior">CPaaS Platform</h3>
-          <p  class="texto-justificado">É uma solução de software de comunicação que atua
-            como uma base sobre a qual desenvolvedores podem
-            integrar uma variedade de aplicativos.</p>
+          <h1 class="cor-2fa">2FA</h1>
+          <h4 class="cor-2fa">Autenticação de Dois Fatores</h4>
+          <p class="texto-justificado">O 2FA é um procedimento de segurança que garante que serão
+            necessários 2 fatores únicos para liberação de uma ação. O
+            primeiro fator é a senha que o usuário e o segundo pode ser
+            autenticado via token, via detecção de impressão digital,
+            reconhecimento facial, código enviado via sms, entre outros.</p>
         </div>
 
         <!-- Box 2 -->
-        <div class="col">
-          <img src="img/telecall-cpaas-home-red.png" alt="Imagem 2" width="800" class="img-fluid imagem">
+        <div class="col-md-4 p-4">
+          <img src="img/2fa-image.png" alt="Imagem 2" width="100%" class="img-fluid imagem">
         </div>
       </div>
     </div>
 
-        <!-- Blocos de Informações2 -->
-        <div class="row mt-5">
-          <div class="row justify-content-center">
-    
-            <!-- Box 1 -->
-            <div class="col">
-              <div class="card border-primary border-2 p-2 bg-transparent ">
-              <h3 class="cor-cpaas text-center mb-4 ">O que é CPaaS?</h3>
-              <p class="texto-justificado mx-4">CPaaS, ou Plataforma de Comunicação como Serviço, é uma solução que possibilita às empresas a integração simplificada de canais 
-                de comunicação em tempo real, como mensagens SMS e chamadas de voz, aos seus sistemas. Através das nossas APIs, sua empresa pode 
-                aprimorar significativamente a comunicação com os clientes de maneira automatizada e totalmente integrada.</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-          <!-- Blocos de Informações3 -->
+          <!-- Blocos de Informações2 -->
         <div class="row mt-5">
           <div class="row justify-content-center">
             
             <div class="text-center p-3 mb-4">
-              <h2 class="cor-cpaas">Nossos Serviços</h2>
+              <h2 class="cor-cpaas">Como Funciona a Autenticação de Dois Fatores?</h2>
             </div>
     
       <!-- Início dos cards -->
       <div class="col">
         <div class="card border-danger border-0 p-2 text-center bg-transparent">
           <div class="text-center">
-          <a class="#" href="2fa.html">
-          <img src="img/2FA.png" class="img-fluid imagem" width="100" alt="Imagem 1">
-          </a>
+          <img src="img/2fa-pc.png" class="img-fluid imagem" width="512" alt="Imagem 1">
           </div>
           <div class="card-body">
-            <h5 id="h5" class="card-title">2FA</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card border-danger border-0 p-2 text-center bg-transparent">
-          <div class="text-center">
-          <a class="#" href="numero_mascara.html">
-          <img src="img/numero_mascara.png" class="img-fluid imagem" width="100" alt="Imagem 2">
-          </a>
-        </div>
-          <div class="card-body">
-            <h5 id="h5" class="card-title">Número Máscara</h5>
+            <p class="texto-justificado">Usuário <strong>acessa seu site o aplicativo</strong> e digita a senha cadastrada para entrar em
+              seu perfil ou completar uma transação.</p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card border-danger border-0 p-2 text-center bg-transparent">
           <div class="text-center">
-          <a class="#" href="google_verified.html">
-          <img src="img/verific.png" class="img-fluid imagem" width="100" alt="Imagem 3">
-          </a>
+          <img src="img/2fa-alerta.png" class="img-fluid imagem" width="171" alt="Imagem 2">
         </div>
           <div class="card-body">
-            <h5 id="h5" class="card-title">Google Verified Calls
+            <p class="texto-justificado">A Telecall recebe a tentativa de login e solicita que o usuário <strong>insira seu número de
+              telefone</strong> para autorizar o acesso</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-danger border-0 p-2 text-center bg-transparent">
+          <div class="text-center">
+          <img src="img/2fa-telefone.png" class="img-fluid imagem" width="94" alt="Imagem 3">
+        </div>
+          <div class="card-body">
+              <p class="texto-justificado">Após inserir seu número, a Telecall <strong>envia para o usuário</strong> por SMS, chamada ou e-mail
+                um <strong>código PIN</strong> de uso único.</p>
               </h5>
           </div>
         </div>
@@ -164,12 +151,11 @@
       <div class="col">
         <div class="card border-danger border-0 p-2 text-center bg-transparent">
           <div class="text-center">
-          <a class="#" href="sms_programavel.html">
-          <img src="img/sms.png" class="img-fluid imagem" width="100" alt="Imagem 4">
-          </a>
+          <img src="img/2fa-pc2.png" class="img-fluid imagem" width="512" alt="Imagem 4">
         </div>
           <div class="card-body">
-            <h5 id="h5" class="card-title">SMS Programável</h5>
+            <p class="texto-justificado">O usuário <strong>insere o código</strong> no site ou aplicativo para concluir o processo de
+              verificação.</p>
           </div>
         </div>
       </div>
@@ -177,27 +163,56 @@
         </div>
 
         
-    <!-- Blocos de Informações3 -->
+        <!-- Blocos de Informações 3 -->
+        <div class="row mt-5">
+          <div class="row">
+    
+          <div class="text-center p-3 content">
+            <h2 class="letramaior h3" id="h3">Nossos Benefícios</h2>
+          </div>
+    
+            <!-- Box 1 -->
+            <div class="col-md-6 text-center">
+                <img src="img/2fa-pc-telefone.png" class="img-fluid imagem" alt="Imagem do Box 2" width="450">
+                <!-- Substitua "caminho/para/sua/imagem.jpg" pelo caminho real da sua imagem -->
+            </div>
+       
+            <!-- Box 2 -->
+            <div class="col-md-6">
+                <ul class="list-unstyled m-3">
+                  <li class="content mb-2"><i class="fas fa-check-circle text-success me-2"></i>Ofereça segurança aprimorada para seus clientes</li>
+                  <li class="content mb-2"><i class="fas fa-check-circle text-success me-2"></i>Reduza casos de fraude e invasões e evite o acesso a dados por invasores</li>
+                  <li class="content mb-2"><i class="fas fa-check-circle text-success me-2"></i>Envio de OTP por meio de vários canais, incluindo SMS, voz ou e-mail</li>
+                  <li class="content mb-2"><i class="fas fa-check-circle text-success me-2"></i>Flexibilidade de canais garantindo  que o usuário complete a tarefa desejada</li>
+                  <li class="content mb-2"><i class="fas fa-check-circle text-success me-2"></i>API simples e de rápida implementação</li>
+                  <li class="content mb-2"><i class="fas fa-check-circle text-success me-2"></i>Plataforma intuitiva que permite visualizar relatórios de uso por dia</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+
+<!-- Blocos de Informações3 -->
     <div class="row mt-5">
        <div class="row justify-content-center">
               
         <div class="text-center p-3 mb-4">
-          <h2 class="cor-cpaas">Usos</h2>
+          <h2 class="cor-cpaas">Como usar em sua Empresa?</h2>
         </div>
 
 <!-- Início dos cards 2 -->
 <div class="col">
   <div class="card border-danger border-0 p-2 text-center bg-transparent">
     <div class="text-center">
-    <img src="img/cubo.png" id="cubo" class="img-fluid imagem" width="100" alt="Imagem 1">
+    <img src="img/financas.png" id="financas" class="img-fluid imagem" width="100" alt="Imagem 1">
     </div>
     <div class="card-body">
-      <h5 id="h5" class="card-title mb-4">Logística</h5>
-      <ul class="list-unstyled ">
-        <li><p>Acesso seguro com 2FA.</p></li>
-        <li><p>Uso de números mascarados para proteção de funcionário e cliente.</p></li>
-        <li><p>Mantenha o cliente informado sobre entrega e serviços.</p></li>
-        <li><p>Verified calling para confirmação de entregas.</p></li>
+      <h5 id="h5" class="card-title mb-4">Finanças</h5>
+      <ul class="m-0">
+        <li class="content texto-justificado2"><p>Acesso ao portal/app</p></li>
+        <li class="content texto-justificado2"><p>Autenticação para transações bancárias</p></li>
+        <li class="content texto-justificado2"><p>Pagamentos Online</p></li>
+        <li class="content texto-justificado2"><p>Digital Wallets</p></li>
       </ul>
     </div>
   </div>
@@ -205,54 +220,71 @@
 <div class="col">
   <div class="card border-danger border-0 p-2 text-center bg-transparent">
     <div class="text-center">
-    <img src="img/carrinho.png" id="carrinho" class="img-fluid imagem" width="100" alt="Imagem 2">
-  </div>
-    <div class="card-body">
-      <h5 id="h5" class="card-title mb-4">Varejo</h5>
-      <ul class="list-unstyled ">
-        <li><p>Compra segura com 2FA.</p></li>
-        <li><p>Avisos sobre compras e entregas.</p></li>
-        <li><p>Upsell com novas ofertas e vantagens via SMS ou Verified Calling.</p></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="col">
-  <div class="card border-danger border-0 p-2 text-center bg-transparent">
-    <div class="text-center">
-    <img src="img/atendente.png" id="atendente" class="img-fluid imagem" width="100" alt="Imagem 3">
-  </div>
-    <div class="card-body">
-      <h5 id="h5" class="card-title mb-4">Call Center</h5>
-      <ul class="list-unstyled ">
-        <li><p>Melhore taxas de abertura utilizando alertas SMS para confirmações.</p></li>
-        <li><p>Economia de números com o uso de um único número máscara por todos os agentes.</p></li>
-        <li><p>Verified Calling para confirmação de agendamentos.</p></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="col">
-  <div class="card border-danger border-0 p-2 text-center bg-transparent">
-    <div class="text-center">
-    <img src="img/saude.png" id="saude" class="img-fluid imagem" width="100" alt="Imagem 4">
+    <img src="img/saude.png" id="saude" class="img-fluid imagem" width="100" alt="Imagem 2">
   </div>
     <div class="card-body">
       <h5 id="h5" class="card-title mb-4">Saúde</h5>
-      <ul class="list-unstyled ">
-        <li><p>Acesso seguro com 2FA.</p></li>
-        <li><p>Melhore o agendamento e reduza faltas com lembretes por SMS.</p></li>
-        <li><p>Tokens de autorização para procedimentos com 2FA.</p></li>
-        <li><p>Verified Calling para avisos de resultados e agendamentos.</p></li>
+      <ul class="m-0">
+        <li class="content texto-justificado2"><p>Acesso ao portal/app</p></li>
+        <li class="content texto-justificado2"><p>Agendamentos</p></li>
+        <li class="content texto-justificado2"><p>Tokens de autorização</p></li>
+        <li class="content texto-justificado2"><p>Telemedicina</p></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card border-danger border-0 p-2 text-center bg-transparent">
+    <div class="text-center">
+    <img src="img/aviao.png" id="aviao" class="img-fluid imagem" width="100" alt="Imagem 3">
+  </div>
+    <div class="card-body">
+      <h5 id="h5" class="card-title mb-4">Turismo</h5>
+      <ul class="m-0">
+        <li class="content texto-justificado2"><p>Acesso ao portal/app</p></li>
+        <li class="content texto-justificado2"><p>Gestão de Reservas</p></li>
+        <li class="content texto-justificado2"><p>Acesso ao histórico</p></li>
+        <li class="content texto-justificado2"><p>Salvar dados de pagamentos</p></li>
+        <li class="content texto-justificado2"><p>Recuperação de senha</p></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card border-danger border-0 p-2 text-center bg-transparent">
+    <div class="text-center">
+    <img src="img/carrinho.png" id="carrinho" class="img-fluid imagem" width="100" alt="Imagem 3">
+  </div>
+    <div class="card-body">
+      <h5 id="h5" class="card-title mb-4">Varejo</h5>
+      <ul class="m-0">
+        <li class="content texto-justificado2"><p>Acesso ao portal/app</p></li>
+        <li class="content texto-justificado2"><p>Salvar dados de pagamentos</p></li>
+        <li class="content texto-justificado2"><p>Acesso ao histórico</p></li>
+        <li class="content texto-justificado2"><p>Recuperação de senha</p></li>
+        <li class="content texto-justificado2"><p>Recibo Eletrônico</p></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card border-danger border-0 p-2 text-center bg-transparent">
+    <div class="text-center">
+    <img src="img/governo.png" id="governo" class="img-fluid imagem" width="100" alt="Imagem 4">
+  </div>
+    <div class="card-body">
+      <h5 id="h5" class="card-title mb-4">Governo</h5>
+      <ul class="m-0">
+        <li class="content texto-justificado2"><p>Acesso ao portal/app</p></li>
+        <li class="content texto-justificado2"><p>Gestão de informações</p></li>
+        <li class="content texto-justificado2"><p>Agendamentos</p></li>
+        <li class="content texto-justificado2"><p>Recuperação de senha</p></li>
       </ul>
     </div>
   </div>
 </div>
     </div>
   </div>
-
-
-
 
 
 
@@ -332,7 +364,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
-  <script src="js/cpaas.js"></script>
+  <script src="js/2fa.js"></script>
 </body>
 
 </html>

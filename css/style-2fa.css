@@ -1,8 +1,7 @@
-.cor-cpaas{
-    color: #CA1C2A;
+.cor-2fa{
+    color: #003B71;
     font-weight: bold;
 }
-
   
        /* Adicione estilos personalizados aqui, se necessÃĄrio */
        body {
@@ -39,6 +38,11 @@
     }
 
     body.dark-mode p{
+        background-color: #333;
+        color: #fff;
+    }
+
+    body.dark-mode .li{
         background-color: #333;
         color: #fff;
     }

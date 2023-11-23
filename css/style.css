@@ -44,6 +44,13 @@
 
   }
 
+  .texto-justificado{
+    text-align: justify;
+  }
+
+  .texto-justificado2{
+    text-align: left;
+  }
 
 
     /* Adicione estilos personalizados aqui, se necessÃĄrio */
