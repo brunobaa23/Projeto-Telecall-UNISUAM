@@ -47,14 +47,3 @@ function changeFontSize(delta) {
     const currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
     body.style.fontSize = (currentSize + delta) + 'px';
 }
-
-//PARTE DO ENTRE EM CONTATO
-
-function submitForm() {
-    // Simulate a successful form submission
-    alert("Mensagem enviada com sucesso!");
-  
-    // Reload the page after showing the alert
-    location.reload();
-  }
-  

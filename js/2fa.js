@@ -80,3 +80,20 @@ function changeToLightImages() {
         }
     });
 }
+
+
+
+//FUNÇÃO AUMENTAR FONTE
+
+document.getElementById('increaseFontBtn').addEventListener('click', function() {
+    changeFontSize(5); // Aumenta a fonte em 5 pixels
+});
+
+document.getElementById('decreaseFontBtn').addEventListener('click', function() {
+    changeFontSize(-5); // Diminui a fonte em 5 pixels
+});
+
+function changeFontSize(delta) {
+    const currentSize = parseFloat(window.getComputedStyle(body, null).getPropertyValue('font-size'));
+    body.style.fontSize = (currentSize + delta) + 'px';
+}

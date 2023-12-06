@@ -3,10 +3,7 @@
 const darkModeToggleBtn = document.getElementById('darkModeToggleBtn');
 const body = document.body;
 const imagens = [
-    document.getElementById('cubo'), // Adicione os IDs das suas imagens aqui
-    document.getElementById('carrinho'),
-    document.getElementById('atendente'),
-    document.getElementById('saude')
+    document.getElementById('engrenagens') // Adicione os IDs das suas imagens aqui
 ];
 
 // Recupere o estado do modo escuro do armazenamento local
@@ -45,15 +42,9 @@ function changeToDarkImages() {
     imagens.forEach(imagem => {
         if (imagem) {
             // Aqui você substitui pelo caminho da sua imagem escura para cada ID
-            if (imagem.id === 'cubo') {
-                imagem.src = 'img/cubo-branco.png';
-            } else if (imagem.id === 'carrinho') {
-                imagem.src = 'img/carrinho-branco.png';
-            } else if (imagem.id === 'atendente') {
-                imagem.src = 'img/atendente-branco.png';
-            } else if (imagem.id === 'saude') {
-                imagem.src = 'img/saude-branco.png';
-            }
+            if (imagem.id === 'engrenagens') {
+                imagem.src = 'img/engrenagens-mecanicas-branca.png';
+            } 
         }
     });
 }
@@ -63,15 +54,9 @@ function changeToLightImages() {
     imagens.forEach(imagem => {
         if (imagem) {
             // Aqui você substitui pelo caminho da sua imagem clara para cada ID
-            if (imagem.id === 'cubo') {
-                imagem.src = 'img/cubo.png';
-            } else if (imagem.id === 'carrinho') {
-                imagem.src = 'img/carrinho.png';
-            } else if (imagem.id === 'atendente') {
-                imagem.src = 'img/atendente.png';
-            } else if (imagem.id === 'saude') {
-                imagem.src = 'img/saude.png';
-            }
+            if (imagem.id === 'engrenagens') {
+                imagem.src = 'img/engrenagens-mecanicas.png';
+            } 
         }
     });
 }

@@ -16,7 +16,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light justify-content-between menu_cor p-0 pb-1">
+  <nav class="navbar navbar-expand-md navbar-light menu_cor p-0 pb-1">
     <div class="container-fluid px-0">
 
       <!-- Logo -->
@@ -29,13 +29,13 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-center fundo_menu" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end fundo_menu" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item espaco">
             <a class="nav-link text-white" href="index.html">Home</a>
           </li>
           <li class="nav-item espaco">
-            <a class="nav-link text-nowrap text-white" href="#quem-somos">Quem Somos</a>
+            <a class="nav-link text-nowrap text-white" href="#quem-somos">A Telecall</a>
           </li>
           <li class="nav-item espaco">
             <a class="nav-link text-white" href="#fale-conosco">Atendimento</a>
@@ -53,27 +53,49 @@
               <li><a class="dropdown-item" href="sms_programavel.html">SMS Programável</a></li>
             </ul>  
           </li>
+          <li class="nav-item espaco nav-item ">
+            <a class="nav-link text-white text-nowrap" href="portfolio.html">Quem Somos </a>
+          </li>
+          <li class="nav-item mx-5">
+
+          </li>
+          <li class="nav-item mx-5">
+
+          </li>
+         
+          <li class="nav-item ">
+            <button class="btn border-danger border-3 m-0 mx-0" id="increaseFontBtn">
+                A
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="btn border-danger border-3 m-0 mx-1" id="decreaseFontBtn">
+                a
+            </button>
+        </li>
+
+        <li class="nav-item">
+
+        <div class=" border-2 p-0 m-0 mx-1 border-danger">
+          <button class="btn border-danger border-3" id="darkModeToggleBtn">
+              <i class="bi toggle-icon"><img src="img/darkmode.png" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+              </img></i>
+          </button>
+        </div>
+
+        </li>
+
+        <li class="nav-item">
+            <!-- Área do cliente -->
+            <div class="ml-auto alogin">
+              <a class="btn me-2 text-white border-danger border-3 text-nowrap" href="login.html">Área do Cliente</a>
+            </div>
+
+        </li>
+
         </ul>
       </div>
 
-      
-
-      <!-- Botão Dark Mode com Animação -->
-
-      <div class="mx-2 border-2 p-0 m-0 border-danger">
-        <button class="btn border-danger border-3" id="darkModeToggleBtn">
-            <i class="bi bi-moon toggle-icon"></i>
-            <i class="bi bi-sun-fill toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-highlights" viewBox="0 0 16 16">
-              <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0Zm-8 5v1H4.5a.502.502 0 0 0-.093.009A7.029 7.029 0 0 1 3.1 13H8Zm0-1H2.255a6.998 6.998 0 0 1-.581-1H8v1Zm-6.71-2a6.96 6.96 0 0 1-.22-1H8v1H1.29ZM1 8c0-.34.024-.673.07-1H8v1H1Zm.29-2c.103-.345.231-.68.384-1H8v1H1.29Zm.965-2c.25-.36.534-.694.846-1H8v1H2.255Zm2.137-2A6.967 6.967 0 0 1 8 1v1H4.392Z"/>
-            </svg></i>
-        </button>
-      </div>
-
-
-      <!-- Área do cliente -->
-      <div class="ml-auto alogin">
-        <a class="btn me-2 text-white border-danger border-3" href="login.html">Área do Cliente</a>
-      </div>
     </div>
   </nav>
 
@@ -81,6 +103,7 @@
   <div class="container my-5">
     <!-- Carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <a href="Login.html">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="img/banne1_telecall.png" class="d-block w-100" alt="Imagem 1">
@@ -91,6 +114,7 @@
         <div class="carousel-item">
           <img src="img/banne3_telecall.png" class="d-block w-100" alt="Imagem 3">
         </div>
+      </a>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
         data-bs-slide="prev">
@@ -213,7 +237,9 @@
                 <label for="mens" class="form-label mx-3">Mensagem</label>
                 <textarea type="mens"  class="form-control border border-3 shadow-lg p-1 mb-1 bg-white m-2 p-2" id="mens" rows="4" placeholder="Digite aqui a sua Mensagem" required></textarea>
               </div>
-              <button type="submit" class="btn btn-primary mx-3">Enviar</button>
+              <a href="#">
+              <button type="submit" class="btn btn-primary mx-3" onclick="submitForm()" > Enviar</button>
+            </a>
             </form>
           </div>
           
@@ -271,17 +297,17 @@
             <h5>Rede Sociais</h5>
             <ul class="list-unstyled">
               <li class="me-3">
-                <a href="https://www.facebook.com/" class="text-decoration-none">
+                <a href="https://www.facebook.com/TelecallBr/" class="text-decoration-none">
                   <img src="img/facebook.png" alt="Facebook" width="20"> Facebook
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://www.twitter.com/" class="text-decoration-none">
+                <a href="https://www.twitter.com/telecallbr/" class="text-decoration-none">
                   <img src="img/twitter.png" alt="Twitter" width="20"> Twitter
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://www.instagram.com/" class="text-decoration-none">
+                <a href="https://www.instagram.com/telecallbr//" class="text-decoration-none">
                   <img src="img/instagram.png" alt="Instagram" width="20"> Instagram
                 </a>
               </li>
@@ -293,7 +319,7 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2023 Copyright:
-      <a class="text-white" href="https://graduacao.unisuam.edu.br/">GRUPO 04</a>
+        <a class="text-white" href="portfolio.html">GRUPO 04</a>
       </div>
   </footer>
 

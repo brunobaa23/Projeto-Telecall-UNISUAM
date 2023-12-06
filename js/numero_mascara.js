@@ -3,10 +3,11 @@
 const darkModeToggleBtn = document.getElementById('darkModeToggleBtn');
 const body = document.body;
 const imagens = [
-    document.getElementById('cubo'), // Adicione os IDs das suas imagens aqui
+    document.getElementById('nuvem'), // Adicione os IDs das suas imagens aqui
+    document.getElementById('taxi'),
+    document.getElementById('telefone-coracao'),
     document.getElementById('carrinho'),
-    document.getElementById('atendente'),
-    document.getElementById('saude')
+    document.getElementById('nuvem2')
 ];
 
 // Recupere o estado do modo escuro do armazenamento local
@@ -45,14 +46,16 @@ function changeToDarkImages() {
     imagens.forEach(imagem => {
         if (imagem) {
             // Aqui você substitui pelo caminho da sua imagem escura para cada ID
-            if (imagem.id === 'cubo') {
-                imagem.src = 'img/cubo-branco.png';
+            if (imagem.id === 'nuvem') {
+                imagem.src = 'img/nuvem-branco.png';
+            } else if (imagem.id === 'taxi') {
+                imagem.src = 'img/taxi-branco.png';
+            }else if (imagem.id === 'telefone-coracao') {
+                imagem.src = 'img/telefone-coracao-branco.png';
             } else if (imagem.id === 'carrinho') {
                 imagem.src = 'img/carrinho-branco.png';
-            } else if (imagem.id === 'atendente') {
-                imagem.src = 'img/atendente-branco.png';
-            } else if (imagem.id === 'saude') {
-                imagem.src = 'img/saude-branco.png';
+            } else if (imagem.id === 'nuvem2') {
+                imagem.src = 'img/nuvem-branco.png';
             }
         }
     });
@@ -63,19 +66,20 @@ function changeToLightImages() {
     imagens.forEach(imagem => {
         if (imagem) {
             // Aqui você substitui pelo caminho da sua imagem clara para cada ID
-            if (imagem.id === 'cubo') {
-                imagem.src = 'img/cubo.png';
+            if (imagem.id === 'nuvem') {
+                imagem.src = 'img/nuvem.png';
+            } else if (imagem.id === 'taxi') {
+                imagem.src = 'img/taxi.png';
+            } else if (imagem.id === 'telefone-coracao') {
+                imagem.src = 'img/telefone-coracao.png';
             } else if (imagem.id === 'carrinho') {
                 imagem.src = 'img/carrinho.png';
-            } else if (imagem.id === 'atendente') {
-                imagem.src = 'img/atendente.png';
-            } else if (imagem.id === 'saude') {
-                imagem.src = 'img/saude.png';
-            }
+            } else if (imagem.id === 'nuvem2') {
+                imagem.src = 'img/nuvem.png';
+            } 
         }
     });
 }
-
 
 
 //FUNÇÃO AUMENTAR FONTE

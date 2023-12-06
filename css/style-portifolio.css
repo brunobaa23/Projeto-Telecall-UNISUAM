@@ -79,6 +79,11 @@
         color: #fff;
     }
 
+    body.dark-mode p{
+        background-color: #333;
+        color: #fff;
+    }
+
     body.dark-mode h3{
         background-color: #333;
         color: #fff;

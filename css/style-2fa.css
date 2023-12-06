@@ -2,6 +2,11 @@
     color: #003B71;
     font-weight: bold;
 }
+
+.cor-2fa-2{
+    color: #CA1C2A;
+    font-weight: bold;
+}
   
        /* Adicione estilos personalizados aqui, se necessÃĄrio */
        body {
@@ -50,3 +55,30 @@
     h5{
         text-size-adjust: larger;
     }
+
+    
+    body.dark-mode #img1{
+        border-radius: 20px;
+        background-color: #e6e0e0;
+      padding: 1%;
+        
+        ;}
+
+        body.dark-mode #img2{
+            border-radius: 100px;
+            background-color: #e6e0e0;
+          padding: 1%;
+            
+            ;}
+
+    body.dark-mode #img3{
+    border-radius: 10%;
+    background-color: #e6e0e0;
+    padding: 1%;
+    ;}
+
+    body.dark-mode #img4{
+        border-radius: 20px;
+        background-color: #e6e0e0;
+      padding: 1%;
+    }    

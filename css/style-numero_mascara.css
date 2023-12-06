@@ -1,8 +1,12 @@
-.cor-cpaas{
-    color: #CA1C2A;
+.cor-num{
+    color: #003B71;
     font-weight: bold;
 }
 
+.cor-num2{
+    color: #CA1C2A;
+    font-weight: bold;
+}
   
        /* Adicione estilos personalizados aqui, se necessÃĄrio */
        body {
@@ -43,14 +47,11 @@
         color: #fff;
     }
 
-    h5{
-        text-size-adjust: larger;
+    body.dark-mode .li{
+        background-color: #333;
+        color: #fff;
     }
 
-    /*ALTERAR TAMANHO DA FONTE*/
-
-      /* Adicione estilos personalizados aqui, se necessário */
-      body{
-        font-size: 16px; /* Tamanho inicial da fonte */
-        transition: font-size 0.3s ease-in-out;
+    h5{
+        text-size-adjust: larger;
     }

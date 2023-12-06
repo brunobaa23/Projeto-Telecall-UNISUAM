@@ -72,3 +72,26 @@
     h5{
         text-size-adjust: larger;
     }
+
+    /*ALTERAR TAMANHO DA FONTE*/
+
+      /* Adicione estilos personalizados aqui, se necessário */
+      body{
+        font-size: 16px; /* Tamanho inicial da fonte */
+        transition: font-size 0.3s ease-in-out;
+    }
+
+    body.dark-mode input:focus {
+        border-color: #fff; /* Cor da borda ao focar */
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.836); /* Sombra ao focar */
+    }
+
+#mostras{
+    padding-right: 220px;
+
+}
+
+
+#boxlogin{
+    border-radius:10px ;
+}

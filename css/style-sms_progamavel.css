@@ -1,3 +1,12 @@
+.cor-sms{
+    color: #003B71;
+    font-weight: bold;
+}
+
+.cor-sms2{
+    color: #CA1C2A;
+    font-weight: bold;
+}
 
 .menu_cor{
     background-color: #CA1C2A;
@@ -98,6 +107,15 @@
     body.dark-mode .letracard{
         background-color: #333;
         color: #fff;
+
+
+    }
+
+      
+    body.dark-mode p{
+        background-color: #333;
+        color: #fff;
+
     }
 
     .letramaior{

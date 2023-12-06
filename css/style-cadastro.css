@@ -60,7 +60,8 @@
   
   #logo{
     
-    height: 40px; /* Altura da Imagem*/
+    height: 50px; /* Altura da Imagem*/
+    padding-right: 30px;
   
   } 
   
@@ -90,7 +91,73 @@
         color: #fff;
     }
 
- 
+    body.dark-mode small {
+      background-color: #333;
+      color: #fff;}
 
+  /*TIRAR SELETOR DO CPF*/
+
+  #cpf[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+#cpf[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+#cep[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+#cep[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+#telefoneCelular[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+#telefoneCelular[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+#telefoneFixo[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+#telefoneFixo[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+
+}
+
+/*ALTERAR TAMANHO DA FONTE*/
+
+      /* Adicione estilos personalizados aqui, se necessário */
+      body{
+        font-size: 16px; /* Tamanho inicial da fonte */
+        transition: font-size 0.3s ease-in-out;
+    }
 
   
+    /* Oculta o ícone de calendário nos campos de data */
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      display: none;
+  }
+
+    
+#boxcadastro{
+  border-radius:10px ;
+}
+
+body.dark-mode #logocad{
+  border-radius: 20px;
+  background-color: #e6e0e0;
+padding: 1%;
+}    

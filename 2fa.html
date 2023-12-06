@@ -19,65 +19,89 @@
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light justify-content-between menu_cor p-0 pb-1">
-    <div class="container-fluid px-0">
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-md navbar-light menu_cor p-0 pb-1">
+  <div class="container-fluid px-0">
 
-      <!-- Logo -->
-      <a class="navbar-brand p-0 m-0  " href="index.html">
-      <img src="img/logo_telecall.jpg" alt="Logo da Telecall" width="200">
-      </a>
+    <!-- Logo -->
+    <a class="navbar-brand p-0 m-0  " href="index.html">
+    <img src="img/logo_telecall.jpg" alt="Logo da Telecall" width="200">
+    </a>
 
-      <!-- Navbar Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center fundo_menu" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item espaco">
-            <a class="nav-link text-white" href="index.html">Home</a>
-          </li>
-          <li class="nav-item espaco">
-            <a class="nav-link text-nowrap text-white" href="index.html">Quem Somos</a>
-          </li>
-          <li class="nav-item espaco">
-            <a class="nav-link text-white" href="index.html">Atendimento</a>
-          </li>
-          <li class="nav-item dropdown espaco">
-            <a class="nav-link dropdown-toggle text-white" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              CPaaS
-            </a>
-            <ul class="dropdown-menu fundo_submenu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="cpaas.html">O que é CPaaS</a></li>
-              <li><a class="dropdown-item" href="2fa.html">2FA</a></li>
-              <li><a class="dropdown-item" href="numero_mascara.html">Número Máscara</a></li>
-              <li><a class="dropdown-item" href="google_verified_calls.html">Google Verified calls</a></li>
-              <li><a class="dropdown-item" href="sms_programavel.html">SMS Programável</a></li>
-            </ul>  
-          </li>
-        </ul>
+    <!-- Navbar Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end fundo_menu" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item espaco">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item espaco">
+          <a class="nav-link text-nowrap text-white" href="index.html">A Telecall</a>
+        </li>
+        <li class="nav-item espaco">
+          <a class="nav-link text-white" href="index.html">Atendimento</a>
+        </li>
+        <li class="nav-item dropdown espaco">
+          <a class="nav-link dropdown-toggle text-white" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            CPaaS
+          </a>
+          <ul class="dropdown-menu fundo_submenu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="cpaas.html">O que é CPaaS</a></li>
+            <li><a class="dropdown-item" href="2fa.html">2FA</a></li>
+            <li><a class="dropdown-item" href="numero_mascara.html">Número Máscara</a></li>
+            <li><a class="dropdown-item" href="google_verified_calls.html">Google Verified calls</a></li>
+            <li><a class="dropdown-item" href="sms_programavel.html">SMS Programável</a></li>
+          </ul>  
+        </li>
+        <li class="nav-item espaco nav-item ">
+          <a class="nav-link text-white text-nowrap" href="portfolio.html">Quem Somos </a>
+        </li>
+        <li class="nav-item mx-5">
+
+        </li>
+        <li class="nav-item mx-5">
+
+        </li>
+       
+        <li class="nav-item ">
+          <button class="btn border-danger border-3 m-0 mx-0" id="increaseFontBtn">
+              A
+          </button>
+      </li>
+      <li class="nav-item">
+          <button class="btn border-danger border-3 m-0 mx-1" id="decreaseFontBtn">
+              a
+          </button>
+      </li>
+
+      <li class="nav-item">
+
+      <div class=" border-2 p-0 m-0 mx-1 border-danger">
+        <button class="btn border-danger border-3" id="darkModeToggleBtn">
+            <i class="bi toggle-icon"><img src="img/darkmode.png" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
+            </img></i>
+        </button>
       </div>
 
-    <!-- Botão Dark Mode com Animação -->
-    <div class="mx-2 border-2 p-0 m-0 border-danger">
-   
-      <button class="btn border-danger border-3" id="darkModeToggleBtn">
-          <i class="bi bi-moon toggle-icon"></i>
-          <i class="bi bi-sun-fill toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-highlights" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0Zm-8 5v1H4.5a.502.502 0 0 0-.093.009A7.029 7.029 0 0 1 3.1 13H8Zm0-1H2.255a6.998 6.998 0 0 1-.581-1H8v1Zm-6.71-2a6.96 6.96 0 0 1-.22-1H8v1H1.29ZM1 8c0-.34.024-.673.07-1H8v1H1Zm.29-2c.103-.345.231-.68.384-1H8v1H1.29Zm.965-2c.25-.36.534-.694.846-1H8v1H2.255Zm2.137-2A6.967 6.967 0 0 1 8 1v1H4.392Z"/>
-          </svg></i>
-      </button>
-  </div>
+      </li>
 
-      <!-- Área do cliente -->
-      <div class="ml-auto alogin">
-        <a class="btn me-2 text-white border-danger border-3" href="login.html">Área do Cliente</a>
-      </div>
+      <li class="nav-item">
+          <!-- Área do cliente -->
+          <div class="ml-auto alogin">
+            <a class="btn me-2 text-white border-danger border-3 text-nowrap" href="login.html">Área do Cliente</a>
+          </div>
+
+      </li>
+
+      </ul>
     </div>
-  </nav>
 
+  </div>
+</nav>
 
   <!-- Corpo da Página -->
   <div class="container my-5">
@@ -110,14 +134,14 @@
           <div class="row justify-content-center">
             
             <div class="text-center p-3 mb-4">
-              <h2 class="cor-cpaas">Como Funciona a Autenticação de Dois Fatores?</h2>
+              <h2 class="cor-2fa-2">Como Funciona a Autenticação de Dois Fatores?</h2>
             </div>
     
       <!-- Início dos cards -->
       <div class="col">
         <div class="card border-danger border-0 p-2 text-center bg-transparent">
           <div class="text-center">
-          <img src="img/2fa-pc.png" class="img-fluid imagem" width="512" alt="Imagem 1">
+          <img src="img/2fa-pc.png" id="img1" class="img-fluid imagem" width="512" alt="Imagem 1">
           </div>
           <div class="card-body">
             <p class="texto-justificado">Usuário <strong>acessa seu site o aplicativo</strong> e digita a senha cadastrada para entrar em
@@ -128,7 +152,7 @@
       <div class="col">
         <div class="card border-danger border-0 p-2 text-center bg-transparent">
           <div class="text-center">
-          <img src="img/2fa-alerta.png" class="img-fluid imagem" width="171" alt="Imagem 2">
+          <img src="img/2fa-alerta.png" id="img2" class="img-fluid imagem" width="171" alt="Imagem 2">
         </div>
           <div class="card-body">
             <p class="texto-justificado">A Telecall recebe a tentativa de login e solicita que o usuário <strong>insira seu número de
@@ -139,19 +163,18 @@
       <div class="col">
         <div class="card border-danger border-0 p-2 text-center bg-transparent">
           <div class="text-center">
-          <img src="img/2fa-telefone.png" class="img-fluid imagem" width="94" alt="Imagem 3">
+          <img src="img/2fa-telefone.png" id="img3" class="img-fluid imagem" width="94" alt="Imagem 3">
         </div>
           <div class="card-body">
               <p class="texto-justificado">Após inserir seu número, a Telecall <strong>envia para o usuário</strong> por SMS, chamada ou e-mail
                 um <strong>código PIN</strong> de uso único.</p>
-              </h5>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card border-danger border-0 p-2 text-center bg-transparent">
           <div class="text-center">
-          <img src="img/2fa-pc2.png" class="img-fluid imagem" width="512" alt="Imagem 4">
+          <img src="img/2fa-pc2.png" id="img4" class="img-fluid imagem" width="512" alt="Imagem 4">
         </div>
           <div class="card-body">
             <p class="texto-justificado">O usuário <strong>insere o código</strong> no site ou aplicativo para concluir o processo de
@@ -168,7 +191,7 @@
           <div class="row">
     
           <div class="text-center p-3 content">
-            <h2 class="letramaior h3" id="h3">Nossos Benefícios</h2>
+            <h2 class="cor-2fa-2" id="h3">Nossos Benefícios</h2>
           </div>
     
             <!-- Box 1 -->
@@ -197,7 +220,7 @@
        <div class="row justify-content-center">
               
         <div class="text-center p-3 mb-4">
-          <h2 class="cor-cpaas">Como usar em sua Empresa?</h2>
+          <h2 class="cor-2fa-2">Como usar em sua Empresa?</h2>
         </div>
 
 <!-- Início dos cards 2 -->
@@ -334,17 +357,17 @@
             <h5>Rede Sociais</h5>
             <ul class="list-unstyled">
               <li class="me-3">
-                <a href="https://www.facebook.com/" class="text-decoration-none">
+                <a href="https://www.facebook.com/TelecallBr/" class="text-decoration-none">
                   <img src="img/facebook.png" alt="Facebook" width="20"> Facebook
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://www.twitter.com/" class="text-decoration-none">
+                <a href="https://www.twitter.com/telecallbr/" class="text-decoration-none">
                   <img src="img/twitter.png" alt="Twitter" width="20"> Twitter
                 </a>
               </li>
               <li class="me-3">
-                <a href="https://www.instagram.com/" class="text-decoration-none">
+                <a href="https://www.instagram.com/telecallbr//" class="text-decoration-none">
                   <img src="img/instagram.png" alt="Instagram" width="20"> Instagram
                 </a>
               </li>
@@ -356,7 +379,7 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2023 Copyright:
-      <a class="text-white" href="https://graduacao.unisuam.edu.br/">GRUPO 04</a>
+      <a class="text-white" href="portfolio.html">GRUPO 04</a>
       </div>
   </footer>
 
